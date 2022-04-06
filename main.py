@@ -1,16 +1,18 @@
-# This is a sample Python script.
+days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
+workdays = days.copy()
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+workdays.pop(5)
+workdays.pop(5)
+
+print(days)
+print(workdays)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+days2 = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
+workdays2 = days2.copy()
 
+workdays2.remove('sat')
+workdays2.remove('sun')
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(days2)
+print(workdays2)
